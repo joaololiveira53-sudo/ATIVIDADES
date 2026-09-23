@@ -1,0 +1,15 @@
+function contarFrequencia (itens){
+    const contagem = {};
+
+    for (const item of itens) {
+        if (contagem [item]){
+            contagem[item] +=1;
+        }else{
+            contagem[item] = 1;
+        }
+    }
+    return contagem;
+}
+
+const votos = ["marca", "banana", "maca", "laranja", "banana", "maca"];
+console.log(contarFrequencia(votos));
